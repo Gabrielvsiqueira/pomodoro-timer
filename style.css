@@ -1,0 +1,26 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+}
+.list {
+    border: 4px solid rgb(41, 41, 140);
+    padding: 10px;
+    margin: 10px 0 0 0;
+}
+.task {
+    border: 3px solid rgb(99, 154, 16);
+    border-radius: 1cap;
+    margin: 10px 0 0 0;
+    padding: 20px;
+}
+#cronometro {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: #d6cdcd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-radius: 1cap;
+  }
