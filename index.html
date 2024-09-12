@@ -5,31 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gabriel Vitor Siqueira">
     <title>Pomodoro Timer</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
-    </style>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1 id="titulo">Pomodoro Timer</h1>
-    <div class="list">
-        <h3>Tasks</h3>
-        <input type="button" value=" + Adicione uma tarefa em que você ira se concentrar.">
-        <table>
-            <div class="task">
-                <input type="text"
-                placeholder="Digite sua tarefa..">
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Tarefas</h2>
+            <div class="card-slot">
+                <div class="card">Card 1</div>
             </div>
-          </table>
+            <div class="card-slot">
+                <div class="card">Card 2</div>
+            </div>
+            <div class="card-slot">
+                <div class="card">Card 3</div>
+            </div>
+            <div class="botoes-container">
+                <button> Tempo Curto</button>
+                <button> Tempo Longo</button>
+                <button> Iniciar</button>
+            </div>
+        </aside>
+        <div class="cronometro-container" id="cronometro">
+            00:00
         </div>
     </div>
-    <div>
-        <div id="cronometro">00:00:00</div>
-        <button>Iniciar</button>
-        <button>Pausar</button>
-        <button>Zerar</button>
-    </div>
-
     <script src="/script.js"></script>
 </body>
 </html>
