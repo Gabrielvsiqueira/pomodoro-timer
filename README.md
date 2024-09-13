@@ -19,7 +19,7 @@ Este sistema foi desenvolvido para auxiliar na gestão do tempo e na melhoria da
 * JavaScript (Client Side)
 
 ## 📌 Objetivo 
-O objetivo deste projeto é testar e aprimorar meus conhecimentos e habilidades em desenvolvimento web. Através da prática e da implementação de novas funcionalidades, busco aprofundar minha compreensão das tecnologias web e melhorar minha capacidade de criar aplicações eficientes e responsivas.
+O objetivo deste projeto é testar e aprimorar meus conhecimentos e habilidades em desenvolvimento web. Através da prática e da implementação de novas funcionalidades, busco aprofundar minha compreensão das tecnologias web e melhorar minha capacidade de criar aplicações eficientes e responsivas
 
 ## 📞Contato
 * Gabriel Vitor Siqueira
