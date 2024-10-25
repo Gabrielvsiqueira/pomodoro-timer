@@ -1,90 +1,78 @@
-body {
-    width: 100vw;
+*{
+    width: auto;
+    height: auto;
+}
+body{
+    background-color: #3946AF;
+    font-family: 'poppins';
+    color: #FFFF;
+}
+main{
+    display: flex;
     height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #c0cbd6;
+}
+header{
+    border-bottom: 1px solid black;
+}
+#titulo{
+    font-size: 80px;
+}
+.cronometro {
+    width: 80%; 
     display: flex;
     flex-direction: column;
+    align-items: center; 
 }
-
-#titulo {
+.cronometro p{
+    font-size: 25px;
     text-align: center;
-    font-size: 56px;
-    background-color: #34495e;
-    color: #fff;
-    margin: 0;
-    padding: 20px 0;
+    margin-left: 20px;
 }
-
-.container {
-    display: flex;
-    width: 100%;
-    height: calc(100% - 100px); 
+.input-circular {
+    width: 600px; /* Largura do input */
+    height: 600px; /* Altura do input */
+    border-radius: 50%; /* Faz o input ficar circular */
+    border: 2px solid #FFFF; /* Borda do input */
+    background-color: #111339; /* Cor de fundo do input */
+    color: #FFFF; /* Cor do texto */
+    text-align: center; /* Centraliza o texto dentro do input */
+    font-size: 56px; /* Tamanho da fonte */
+    margin-left: 40px;
 }
-
-.sidebar {
-    width: 25%;
-    background-color: #2c3e50;
-    color: #fff;
-    padding: 20px;
+.input-circular::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Remove os botões de incremento/decremento */
+}
+#iniciar{
+    margin: 40px;
+    font-size: 38px;
+    font-family: "poppins";
+    background-color: #111339;
+    color: #FFFF;
+    padding: 12px;
+    border-radius: 20px;
+    border: 1px solid 111339;
+}
+#zerar{
+    margin: 40px;
+    font-size: 38px;
+    font-family: "poppins";
+    background-color: #111339;
+    color: #FFFF;
+    padding: 12px;
+    border-radius: 20px;
+    border: 1px solid 111339;
+}
+.tarefas{
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
-    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    width: 200px;
     height: 100%; 
-    box-sizing: border-box; 
-    position: sticky; 
-    top: 0; 
+    border-left: 1px solid #FFFF;
+    padding: 10px
 }
-
-.sidebar h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.card {
-    background-color: #3498db;
-    padding: 20px;
-    color: #fff;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 2rem;
-}
-
-.botoes-container {
-    display: flex;
-    flex-direction:row;
-    gap: 10px;
-    margin-top: 100px;
-    text-align: center;
-    align-items: center;
-}
-
-.botoes-container button {
-    padding: 10px 15px;
-    font-size: 2rem;
-    cursor: pointer;
-    background-color: #527191;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    display: inline-block;
-    margin: 5px 10px;
-}
-
-.botoes-container button:hover {
-    background-color: #34495e;
-}
-
-.cronometro-container { 
-    font-size: 3rem;
-    font-weight: bold;
-    background-color: #2c3e50;
-    color: #fff;
-    padding: 20px;
-    border-radius: 50px;
-    text-align: center;
-    margin: auto; 
-    max-width: 500px; 
-    box-sizing: border-box; 
+.tarefa h3{
+    font-size: 48px;
 }

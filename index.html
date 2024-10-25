@@ -5,31 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gabriel Vitor Siqueira">
     <title>Pomodoro Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="titulo">Pomodoro Timer</h1>
-    <div class="container">
-        <aside class="sidebar">
-            <h2>To Do list</h2>
-            <div class="card-slot">
-                <textarea class="card" ></textarea>
-            </div>
-            <div class="card-slot">
-                <textarea class="card"></textarea>
-            </div>
-            <div class="card-slot">
-                <textarea class="card"></textarea>
-            </div>
-            <div class="botoes-container">
-                <button id="iniciar"> Start</button>
-                <button id="zerar"> Pause</button>
-            </div>
-        </aside>
-        <div class="cronometro-container" id="cronometro">
-            00:00
+    <header>
+        <div>
+            <h1 id="titulo">Pomodoro Timer</h1>
         </div>
-    </div>
+    </header>
+    <main>
+        <section class="cronometro">
+            <div id="relogio">
+                <p>Escolha o tempo em que deseja focar (em minutos)</p>
+                <input type="number" class="input-circular" placeholder="00:00" min="0">
+            </div>
+            <div>
+                <input id="iniciar" type="button" value="Start">
+                <input id="zerar" type="button" value="pause">
+            </div>
+        </section>
+        <section class="tarefas">
+            <h3 id="titulo-task">Tasks</h3>
+            <input  id="new-tasks" type="button" value="+">
+            <div>
+                <input type="text">
+            </div>
+        </section>
+    </main>
     <script src="/script.js"></script>
 </body>
 </html>
