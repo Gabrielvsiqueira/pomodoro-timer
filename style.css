@@ -30,21 +30,21 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 600px; /* Largura do input */
-    height: 600px; /* Altura do input */
-    border-radius: 50%; /* Faz o input ficar circular */
-    border: 2px solid #FFFF; /* Borda do input */
-    background-color: #111339; /* Cor de fundo do input */
-    color: #FFFF; /* Cor do texto */
-    text-align: center; /* Centraliza o texto dentro do input */
-    font-size: 56px; /* Tamanho da fonte */
+    width: 600px; 
+    height: 600px; 
+    border-radius: 50%; 
+    border: 2px solid #FFFF; 
+    background-color: #111339; 
+    color: #FFFF; 
+    text-align: center; 
+    font-size: 56px; 
     margin-left: 40px;
 }
 .input-circular{
-    background-color: #111339; /* Cor de fundo do input */
-    color: #FFFF; /* Cor do texto */
-    text-align: center; /* Centraliza o texto dentro do input */
-    font-size: 56px; /* Tamanho da fonte */
+    background-color: #111339; 
+    color: #FFFF; 
+    text-align: center; 
+    font-size: 56px; 
     border: none;
     width: 90%;
 }
@@ -63,7 +63,7 @@ main{
 }
 #valueShow{
     display: none;
-    font-size: 56px; /* Tamanho da fonte */
+    font-size: 56px; 
 }
 #showMessage{
     display: none;
