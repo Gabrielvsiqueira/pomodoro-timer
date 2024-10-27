@@ -9,16 +9,13 @@ body{
 }
 main{
     display: flex;
-    height: 100vh;
-}
-header{
-    border-bottom: 1px solid black;
+    max-height: 100vh;
 }
 #titulo{
     font-size: 80px;
 }
 .cronometro {
-    width: 80%; 
+    width: 100%; 
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -28,51 +25,46 @@ header{
     text-align: center;
     margin-left: 20px;
 }
-.input-circular {
-    width: 600px; /* Largura do input */
-    height: 600px; /* Altura do input */
-    border-radius: 50%; /* Faz o input ficar circular */
-    border: 2px solid #FFFF; /* Borda do input */
-    background-color: #111339; /* Cor de fundo do input */
-    color: #FFFF; /* Cor do texto */
-    text-align: center; /* Centraliza o texto dentro do input */
-    font-size: 56px; /* Tamanho da fonte */
+.relogio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px; 
+    height: 600px; 
+    border-radius: 50%; 
+    border: 2px solid #FFFF; 
+    background-color: #111339; 
+    color: #FFFF; 
+    text-align: center; 
+    font-size: 56px; 
     margin-left: 40px;
+}
+.input-circular{
+    background-color: #111339; 
+    color: #FFFF; 
+    text-align: center; 
+    font-size: 56px; 
+    border: none;
+    width: 90%;
 }
 .input-circular::-webkit-inner-spin-button {
     -webkit-appearance: none; /* Remove os botões de incremento/decremento */
 }
 #iniciar{
-    margin: 40px;
+    margin-top: 40px;
     font-size: 38px;
     font-family: "poppins";
     background-color: #111339;
     color: #FFFF;
-    padding: 12px;
+    padding: 12px 8rem;
     border-radius: 20px;
-    border: 1px solid 111339;
+    border: 1px solid #111339;
 }
-#zerar{
-    margin: 40px;
-    font-size: 38px;
-    font-family: "poppins";
-    background-color: #111339;
-    color: #FFFF;
-    padding: 12px;
-    border-radius: 20px;
-    border: 1px solid 111339;
+#valueShow{
+    display: none;
+    font-size: 56px; 
 }
-.tarefas{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    width: 200px;
-    height: 100%; 
-    border-left: 1px solid #FFFF;
-    padding: 10px
-}
-.tarefa h3{
-    font-size: 48px;
+#showMessage{
+    display: none;
 }

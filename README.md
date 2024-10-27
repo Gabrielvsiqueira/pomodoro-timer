@@ -1,5 +1,6 @@
 # pomodoro-timer
-![Print-do-projeto](./img/wireframe.png)
+![Print-do-projeto](./img/wireframe-figma.png)
+
 ## 🚀 Sobre o Projeto
 Este projeto foi concebido como uma implementação personalizada da técnica Pomodoro, visando aprimorar a organização pessoal. A aplicação inclui as seguintes funcionalidades:
 
