@@ -1,21 +1,28 @@
-let tempo = 0; 
-let intervalo; 
-const cronometroDisplay = document.getElementById('cronometro');
+let countdown;
 
-document.getElementById('iniciar').addEventListener('click', () => {
-    if (!intervalo) {
-        intervalo = setInterval(() => {
-            tempo++;
-            const minutos = Math.floor(tempo / 60);
-            const segundos = tempo % 60;
-            cronometroDisplay.textContent = `${String(minutos).padStart(2, '0')}:${String(segundos).padStart(2, '0')}`;
-        }, 1000);
+function startTimer() {
+    const timeInput = document.getElementById('timeInput').value;
+    let time = timeInput * 60; 
+    clearInterval(countdown);
+    console.log(time);
+
+    if(time <= 0){
+        document.getElementById('showMessage').style.display = 'block';
+        document.getElementById('showMessage').innerText = 'Digite um valor para funcionar.';
+        setTimeout(()=> {
+            document.getElementById('showMessage').style.display = 'none';
+
+        },3000)
+        console.log("digita um valor normal, animal.");
+        return;
     }
-});
-
-document.getElementById('zerar').addEventListener('click', () => {
-    clearInterval(intervalo);
-    intervalo = null; 
-    tempo = 0; 
-    cronometroDisplay.textContent = '00:00'; 
-});
+    countdown = setInterval(() => {
+        const minutes = Math.floor(time / 60);
+        const seconds = time % 60;
+        document.getElementById('timeInput').style.display = 'none';
+        document.getElementById('valueShow').style.display = 'block';
+        document.getElementById('valueShow').innerText = 
+            `${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+        time--;
+    }, 1000);
+}

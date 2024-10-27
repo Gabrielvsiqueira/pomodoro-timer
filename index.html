@@ -18,21 +18,15 @@
     </header>
     <main>
         <section class="cronometro">
-            <div id="relogio">
-                <p>Escolha o tempo em que deseja focar (em minutos)</p>
-                <input type="number" class="input-circular" placeholder="00:00" min="0">
+            <p>Escolha o tempo em que deseja focar (em minutos)</p>
+            <div class="relogio">
+                <input id="timeInput" type="number" class="input-circular" placeholder="00:00">
+                <p id="valueShow"></p>
             </div>
             <div>
-                <input id="iniciar" type="button" value="Start">
-                <input id="zerar" type="button" value="pause">
+                <button id="iniciar" type="button" value="Start" onclick="startTimer()"> Start</button>
             </div>
-        </section>
-        <section class="tarefas">
-            <h3 id="titulo-task">Tasks</h3>
-            <input  id="new-tasks" type="button" value="+">
-            <div>
-                <input type="text">
-            </div>
+            <p id="showMessage"></p>
         </section>
     </main>
     <script src="/script.js"></script>
