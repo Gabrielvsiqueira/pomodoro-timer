@@ -13,18 +13,18 @@
 <body>
     <header>
         <div>
-            <h1 id="titulo">Pomodoro Timer</h1>
+            <h1 id="titlePage">Pomodoro Timer</h1>
         </div>
     </header>
     <main>
-        <section class="cronometro">
-            <p>Escolha o tempo em que deseja focar (em minutos)</p>
-            <div class="relogio">
-                <input id="timeInput" type="number" class="input-circular" placeholder="00:00">
+        <section class="stopwatch">
+            <p>Choose the time you want to focus (in minutes)</p>
+            <div class="clock">
+                <input id="timeInput" type="number" class="circular-input" placeholder="00:00"> 
                 <p id="valueShow"></p>
             </div>
             <div>
-                <button id="iniciar" type="button" value="Start" onclick="startTimer()"> Start</button>
+                <button id="startTimer" type="button" value="Start" onclick="startTimer()"> Start</button>
             </div>
             <p id="showMessage"></p>
         </section>

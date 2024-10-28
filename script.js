@@ -4,16 +4,12 @@ function startTimer() {
     const timeInput = document.getElementById('timeInput').value;
     let time = timeInput * 60; 
     clearInterval(countdown);
-    console.log(time);
-
     if(time <= 0){
         document.getElementById('showMessage').style.display = 'block';
         document.getElementById('showMessage').innerText = 'Digite um valor para funcionar.';
         setTimeout(()=> {
             document.getElementById('showMessage').style.display = 'none';
-
         },3000)
-        console.log("digita um valor normal, animal.");
         return;
     }
     countdown = setInterval(() => {
