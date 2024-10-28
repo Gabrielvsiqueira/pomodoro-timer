@@ -20,7 +20,7 @@ To use this repository, follow the steps outlined below:
 Clone this repository in your local machine using this command:
 git@github.com:Gabrielvsiqueira/pomodoro-timer.git
 
-### 2. Clone the Repository
+### 2. navigate to the repository
 navigate to the location where your project was installed.
 Ex: cd:/test/pomodoro-timer
 
