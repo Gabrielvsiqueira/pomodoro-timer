@@ -3,14 +3,9 @@
 ## 🚀 About the Project
 This project was conceived as a customized implementation of the Pomodoro technique, aimed at enhancing personal organization. The application includes the following features:
 
-* Task List: Allows the user to record and manage daily tasks, facilitating prioritization and tracking of activities to be completed.
-
 * Timer: The project includes a timer that can be started and paused through dedicated buttons:
-
 * Start: Starts the timer, allowing the user to focus on the task at hand for a defined period.
-
- * Pause: Stops the timer and resets the count, providing flexibility to the user.
-
+  
 This system was developed to assist in time management and improve productivity, integrating the Pomodoro technique with an intuitive and functional interface.
 
 ## 📚 How to use this project
