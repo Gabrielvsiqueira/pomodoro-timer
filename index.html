@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gabriel Vitor Siqueira">
-    <title>Pomodoro Timer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <title>Pomodoro Timer</title>
 </head>
 <body>
     <header>
@@ -20,15 +18,19 @@
         <section class="stopwatch">
             <p>Choose the time you want to focus (in minutes)</p>
             <div class="clock">
-                <input id="timeInput" type="number" class="circular-input" placeholder="00:00"> 
+                <input id="timeInput" 
+                type="number" 
+                class="circular-input" 
+                placeholder="00:00"> 
                 <p id="valueShow"></p>
             </div>
             <div>
-                <button id="startTimer" type="button" value="Start" onclick="startTimer()"> Start</button>
+                <button id="startTimer" type="button">Start</button>
+                <button id="stopTimer" type="button">Stop</button>
             </div>
             <p id="showMessage"></p>
         </section>
     </main>
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
