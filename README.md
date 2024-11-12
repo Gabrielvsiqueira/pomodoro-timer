@@ -13,7 +13,7 @@ To use this repository, follow the steps outlined below:
 ### 1. Clone the Repository
 Clone this repository in your local machine using this command:
 
-git clone git@github.com:Gabrielvsiqueira/pomodoro-timer.git
+git clone "git@github.com:Gabrielvsiqueira/pomodoro-timer.git"
 
 ### 3. Open HTML in your browser
 You can open the HTML file in :
