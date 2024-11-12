@@ -12,16 +12,11 @@ To use this repository, follow the steps outlined below:
 
 ### 1. Clone the Repository
 Clone this repository in your local machine using this command:
-git@github.com:Gabrielvsiqueira/pomodoro-timer.git
-
-### 2. navigate to the repository
-navigate to the location where your project was installed.
-Ex: cd:/test/pomodoro-timer
+git clone git@github.com:Gabrielvsiqueira/pomodoro-timer.git
 
 ### 3. Open HTML in your browser
-You can open the HTML file in two ways:
-* Double-clicking the file: Locate the index.html file in your project folder and double-click it. This will open the file directly in your default web browser.
-* Using a plugin: If you prefer to simulate a local server environment, you can use a plugin like Live Server. This plugin allows you to view changes in real time as you edit your code. To use it, simply install it in your text editor (e.g. Visual Studio Code) and open the index.html file through Live Server.
+You can open the HTML file in :
+* Using a live-server plugin: If you prefer to simulate a local server environment, you can use a plugin like Live Server. This plugin allows you to view changes in real time as you edit your code. To use it, simply install it in your text editor (e.g. Visual Studio Code) and open the index.html file through Live Server.
 
 ## 📦 Technologies Used
 * HTML
