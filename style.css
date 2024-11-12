@@ -1,44 +1,76 @@
-*{
+* {
     width: auto;
     height: auto;
 }
-body{
+
+body {
     background-color: #3946AF;
-    font-family: 'poppins';
+    font-family: 'Poppins', sans-serif;
     color: #FFFF;
 }
-main{
+
+main {
     display: flex;
     max-height: 100vh;
 }
-#titlePage{
-    font-size: 80px;
+
+#titlePage {
+    font-size: 4rem;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
 }
+
 .stopwatch {
     width: 100%; 
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
+    margin-bottom: 2rem;
 }
-.stopwatch p{
+
+.stopwatch p {
     font-size: 25px;
     text-align: center;
-    margin-left: 20px;
 }
+
 .clock {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 600px; 
-    height: 600px; 
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    max-width: 600px; 
+    max-height: 600px; 
     border-radius: 50%; 
     border: 2px solid #FFFF; 
     background-color: #111339; 
     color: #FFFF; 
     text-align: center; 
     font-size: 56px; 
-    margin-left: 40px;
+}
+
+#valueShow {
+    display: block; 
+    font-size: 56px; 
+    margin-top: 20px; 
+}
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    max-width: 600px; 
+    max-height: 600px; 
+    border-radius: 50%; 
+    border: 2px solid #FFFF; 
+    background-color: #111339; 
+    color: #FFFF; 
+    text-align: center; 
+    font-size: 56px; 
 }
 .circular-input{
     background-color: #111339; 
@@ -51,15 +83,26 @@ main{
 .circular-input::-webkit-inner-spin-button {
     -webkit-appearance: none; 
 }
-#startTimer{
-    margin-top: 40px;
+
+#startTimer, #stopTimer {
+    width: 100%;
+    max-width: fit-content;
+    margin-top: 20px; 
     font-size: 38px;
-    font-family: "poppins";
-    background-color: #111339;
+    background-color: #111339; 
     color: #FFFF;
-    padding: 12px 8rem;
     border-radius: 20px;
     border: 1px solid #111339;
+    max-width: 17rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#startTimer:hover {
+    background-color: #09034320; 
+}
+#stopTimer:hover {
+    background-color: #09034320; 
 }
 #valueShow{
     display: none;
@@ -67,4 +110,5 @@ main{
 }
 #showMessage{
     display: none;
+    color: red;
 }
