@@ -11,15 +11,19 @@ function startTimer() {
         document.getElementById('showMessage').innerText = 'Digite um valor para funcionar.';
         setTimeout(()=> {
             document.getElementById('showMessage').style.display = 'none';
-        }, 3000);
+        }, 4000);
         return;
     }
 
     isRunning = true; 
+    document.getElementById('timeInput').style.display = 'none'; 
+    document.getElementById('valueShow').style.display = 'block'; 
+
     countdown = setInterval(() => {
         if (time <= 0) {
             clearInterval(countdown);
             isRunning = false; 
+            document.getElementById('valueShow').innerText = '00:00'; 
             return;
         }
 
@@ -36,4 +40,12 @@ function startTimer() {
 function stopTimer() {
     clearInterval(countdown);
     isRunning = false; 
+    document.getElementById('valueShow').innerText = '00:00';
+    document.getElementById('valueShow').style.display = 'none';
+    document.getElementById('timeInput').style.display = 'block'; 
+    document.getElementById('timeInput').value = ''; 
+    document.getElementById('showMessage').style.display = 'none'; 
 }
+
+document.getElementById('startTimer').addEventListener('click', startTimer);
+document.getElementById('stopTimer').addEventListener('click', stopTimer);
